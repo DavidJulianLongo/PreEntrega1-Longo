@@ -31,23 +31,21 @@ function cambioDeMoneda() {
 };
 
 
-
 let nuevaOperacion = true;
 
 while (nuevaOperacion) {
     cambioDeMoneda();
     let respuestaUsuario = prompt("¿Quieres realizar otra operación? (responde 'si' para realizar otra operación, o 'no' para salir)");
 
-    while (respuestaUsuario.toLowerCase() !== "si" && respuestaUsuario.toLowerCase() !== "no") {
-        respuestaUsuario = prompt("Por favor, ingresa 'si' para realizar otra operación, o 'no' para salir:");
-    }
-
-    if (respuestaUsuario.toLowerCase() === "no") {
+    if (respuestaUsuario.toLowerCase() === "si") {
+        
+    } else if (respuestaUsuario.toLowerCase() === "no") {
         nuevaOperacion = false;
         alert("Gracias por utilizar nuestro servicio");
+    }else {
+        respuestaUsuario = prompt("Por favor ingresa 'si' para realizar otra operación, o 'no' para salir");
     }
 };
-
 
 
 
