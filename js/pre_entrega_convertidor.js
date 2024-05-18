@@ -41,10 +41,10 @@ while (nuevaOperacion) {
         if (respuestaUsuario !== "si" && respuestaUsuario !== "no") {
             respuestaUsuario = prompt("Por favor ingresa 'si' para realizar otra operación, o 'no' para salir.");
         };
-    } while (respuestaUsuario.toLowerCase() !== "si" && respuestaUsuario.toLowerCase() !== "no");
+    } while (respuestaUsuario !== "si" && respuestaUsuario !== "no");
 
-    
-    if (respuestaUsuario.toLowerCase() === "si") {
+
+    if (respuestaUsuario === "si") {
 
     } else {
         nuevaOperacion = false;
